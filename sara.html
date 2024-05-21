@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="allmin.css" />
+        <link rel="stylesheet" href="sara.css" />
+        
+        <title>meu amor</title>
+    </head>
+    <body>
+        <div class="container">
+                <div class="title1">
+                    <h2>Sara Porto, aceita ser minha mamaquinha para sempre??</h2>
+                </div>
+                <div class="content1">
+                    <a href="https://open.spotify.com/intl-pt/track/72sfmdpuO5r8cBDgs7MqZZ?si=ad62f7b688b54bc8"> <button class="yes">Sim</button> </a>
+                    <span>Ou</span>
+                    <button id="myButton"  class="no" onmouseover="moverBotao()">Não</button>
+                </div>
+            
+            </div>
+        </div>
+        <style>
+            #myButton {
+                position: fixed;
+                left: calc(50% + 4cm);
+            }
+            </style>
+        <script>
+            function moverBotao() {
+                var botao = document.getElementById("myButton");
+                botao.style.left = Math.random() * window.innerWidth + "px";
+                botao.style.top = Math.random() * window.innerHeight + "px";
+            }
+            </script>
+    </body>
+    
+</html>
