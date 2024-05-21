@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>meu amor</title>
+    </head>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(180deg, rgb(203, 78, 235) 44%, rgb(248, 97, 223) 60%);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Adicionado para alinhar verticalmente */
+    justify-content: center;
+    align-items: center; /* Adicionado para alinhar horizontalmente */
+}
+
+.content1{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Adicionado para centralizar horizontalmente */
+    width: 100%; /* Adicionado para ocupar toda a largura */
+    height: 100px;
+    position: relative; /* Adicionado para posicionar o span absolutamente */
+}
+
+.content1 .no{
+    height: 50px;
+    width: 75px;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    background-color: rgb(209, 56, 158);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bolder;
+   
+}
+
+.content1 .yes{    
+    height: 50px;
+    width: 75px;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    background-color: rgb(209, 56, 158);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: ease .5s;
+    margin-right: 8cm; /* Adicionado para criar uma distância de 3cm do span */
+}   
+
+.yes:hover{
+    background-color: rgb(209, 56, 158);
+}
+
+span{
+    font-weight: bolder;
+    font-size: 18px;
+    color:#FFF;
+    position: absolute; /* Adicionado para manter o span no centro */
+}
+
+.title1{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:3%;
+    width: 100%;
+}
+
+.title1 h2{
+    color: #FFF;
+}
+
+.content2{
+    display: none;
+}
+
+.content2 img{
+    height: 300px;
+    width: 320px;
+}
+
+footer{
+    position: absolute;
+    bottom: 5%;
+    font-size: 13px;
+    color:#FFF;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#FFF;
+}
+
+footer i{
+    color: rgb(30, 0, 139);
+}
+#myButton {
+    position: fixed;
+    left: calc(50% + 3cm);
+}
+
+    </style>
+    <script>
+        function moverBotao() {
+            var botao = document.getElementById("myButton");
+            botao.style.left = Math.random() * window.innerWidth + "px";
+            botao.style.top = Math.random() * window.innerHeight + "px";
+        }
+    </script>
+    <body>
+        <div class="container">
+                <div class="title1">
+                    <h2>Aceita ser minha mamaquinha para sempre??</h2>
+                </div>
+                <div class="content1">
+                    <a href="https://open.spotify.com/intl-pt/track/72sfmdpuO5r8cBDgs7MqZZ?si=ad62f7b688b54bc8"> <button class="yes">Sim</button> </a>
+                    <span>Ou</span>
+                    <button id="myButton"  class="no" onmouseover="moverBotao()">Não</button>
+                </div>
+            
+            </div>
+        </div>
+        <style>
+            #myButton {
+                position: fixed;
+                left: calc(50% + 3cm);
+            }
+            </style>
+    </body>
+    
+</html>
+
